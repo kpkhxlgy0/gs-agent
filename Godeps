@@ -1,0 +1,8 @@
+github.com/kpkhxlgy0/gs_libs HEAD
+github.com/davecgh/go-spew/spew HEAD
+github.com/coreos/etcd/client HEAD
+github.com/peterbourgon/g2s HEAD
+github.com/pquerna/ffjson/ffjson HEAD
+golang.org/x/net/context HEAD
+google.golang.org/grpc HEAD
+gopkg.in/mgo.v2/bson HEAD
