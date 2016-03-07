@@ -2,16 +2,13 @@ package main
 
 import (
 	"encoding/binary"
+	"misc/packet"
 	"net"
 	"time"
-
-	log "github.com/gonet2/libs/nsq-logger"
-)
-
-import (
-	"misc/packet"
 	. "types"
-	"utils"
+
+	log "github.com/kpkhxlgy0/gs_libs/nsq-logger"
+	"github.com/kpkhxlgy0/gs_libs/utils"
 )
 
 // PIPELINE #3: buffer

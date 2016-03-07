@@ -9,16 +9,13 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc/metadata"
 
-	log "github.com/gonet2/libs/nsq-logger"
-)
-
-import (
 	"misc/crypto/dh"
 	"misc/packet"
 	pb "pb"
 	. "types"
 
-	sp "github.com/gonet2/libs/services"
+	log "github.com/kpkhxlgy0/gs_libs/nsq-logger"
+	sp "github.com/kpkhxlgy0/gs_libs/services"
 )
 
 // 心跳包

@@ -5,15 +5,13 @@ import (
 	"os"
 	"time"
 
-	log "github.com/gonet2/libs/nsq-logger"
-	"github.com/peterbourgon/g2s"
-)
-
-import (
 	"client_handler"
 	"misc/packet"
 	. "types"
-	"utils"
+
+	log "github.com/kpkhxlgy0/gs_libs/nsq-logger"
+	"github.com/kpkhxlgy0/gs_libs/utils"
+	"github.com/peterbourgon/g2s"
 )
 
 const (

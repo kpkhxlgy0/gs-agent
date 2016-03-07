@@ -1,7 +1,7 @@
 package main
 
 import (
-	sp "github.com/gonet2/libs/services"
+	sp "github.com/kpkhxlgy0/gs_libs/services"
 )
 
 func startup() {

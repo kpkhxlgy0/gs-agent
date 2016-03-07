@@ -3,12 +3,10 @@ package main
 import (
 	"errors"
 
-	log "github.com/gonet2/libs/nsq-logger"
-)
-
-import (
 	pb "pb"
 	. "types"
+
+	log "github.com/kpkhxlgy0/gs_libs/nsq-logger"
 )
 
 var (

@@ -1,6 +1,8 @@
 package client_handler
 
-import "misc/packet"
+import (
+	"misc/packet"
+)
 
 //# 该文件规定客户端和服务之间的通信结构体模式.注释必须独占一行!!!!!
 //#

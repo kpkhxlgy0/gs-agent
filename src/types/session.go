@@ -3,11 +3,8 @@ package types
 import (
 	"crypto/rc4"
 	"net"
-	"time"
-)
-
-import (
 	pb "pb"
+	"time"
 )
 
 const (

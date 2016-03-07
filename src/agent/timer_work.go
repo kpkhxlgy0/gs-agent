@@ -1,12 +1,10 @@
 package main
 
 import (
-	log "github.com/gonet2/libs/nsq-logger"
 	"time"
-)
-
-import (
 	. "types"
+
+	log "github.com/kpkhxlgy0/gs_libs/nsq-logger"
 )
 
 // 玩家1分钟定时器
