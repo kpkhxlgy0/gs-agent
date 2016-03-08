@@ -10,7 +10,7 @@ import (
 	"time"
 	. "types"
 
-	log "github.com/kpkhxlgy0/gs_libs/nsq-logger" // nsq based logging
+	log "github.com/kpkhxlgy0/gs_libs/nsq-logger"
 	"github.com/kpkhxlgy0/gs_libs/utils"
 )
 
@@ -23,18 +23,14 @@ const (
 )
 
 func main() {
-	// to catch all uncaught panic
 	defer utils.PrintPanicStack()
 
-	// open profiling
 	go func() {
 		log.Info(http.ListenAndServe("0.0.0.0:6060", nil))
 	}()
 
-	// set log prefix
 	log.SetPrefix(SERVICE)
 
-	// resolve address & start listening
 	tcpAddr, err := net.ResolveTCPAddr("tcp4", _port)
 	checkError(err)
 
@@ -43,7 +39,6 @@ func main() {
 
 	log.Info("listening on:", listener.Addr())
 
-	// startup
 	startup()
 
 LOOP:
