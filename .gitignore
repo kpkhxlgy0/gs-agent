@@ -25,3 +25,5 @@ _testmain.go
 
 /.godeps/
 /etcd-browser/
+/.tags
+/.tags1
