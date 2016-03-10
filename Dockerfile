@@ -1,7 +1,7 @@
 FROM golang:latest
 MAINTAINER kpkhxlgy0 <kpkhxlgy0@163.com>
 ENV GOBIN /go/bin
-COPY .godeps /go/.godeps
+COPY .godeps/src /go/.godeps/src
 COPY src /go/src
 WORKDIR /go
 ENV GOPATH /go:/go/.godeps

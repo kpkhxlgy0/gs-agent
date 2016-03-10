@@ -76,5 +76,6 @@ case $1 in
         echo "    start"
         echo "    restart"
         echo "    stop"
+        echo "    clean"
         ;;
 esac
