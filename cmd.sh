@@ -49,10 +49,13 @@ case $1 in
         $SUDO docker ps -a | awk '/etcd-browser$/ {print $1}' | xargs docker rm -f
         $SUDO docker ps -a | awk '/registry$/ {print $1}' | xargs docker rm -f
         ;;
+    build)
+        $SUDO docker build --no-cache --rm=true -t agent .
+        ;;
     start)
         # TODO, will use name list
         if [ "$(docker images | awk '/^agent/ {print $1}')" = "" ]; then
-            $SUDO docker build --no-cache --rm=true -t agent .
+            $0 build
         fi
         $SUDO docker run --rm=true --name agent1 -h agent_dev -it -p 8888:8888 -p 6060:6060 -e SERVICE_ID=agent1 agent
         ;;
